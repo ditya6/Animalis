@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'susu';
+    src: url('fonts/MilkyNice.ttf');
+}
+
+body {
+	margin: 0;
+	background: radial-gradient(circle, #020111, #000000);
+	overflow: hidden;
+	height: 100vh;
+	cursor: pointer;
+	font-family: susu;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.instructions {
+	font-size: 2rem;
+	font-weight: bold;
+	z-index: 10;
+	color: #ff9671;
+}
+
+.particule {
+	position: absolute;
+	font-size: 2rem;
+	font-family: "susu", serif;
+	font-weight: bold;
+	color: white;
+	transform: scale(0);
+	opacity: 0;
+	text-shadow: 0 0 7px rgb(142 142 142 / 80%);
+}
+
+.sparkle {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: white;
+	transform: scale(0);
+	opacity: 0;
+	text-shadow: 0 0 5px rgb(142 142 142 / 80%);
+}
+
+.projectile {
+    position: absolute; 
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 20px 10px rgba(255,255,255,0.523);
+}
+
+.smoke {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(200, 200, 200, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 5;
+    box-shadow: 0 0 5px rgba(200, 200, 200, 0.4);
+}
+
+.name-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: susu;
+    color: #71f1ff;
+    font-weight: bold;
+    text-shadow: 1px -1px 7px rgba(142, 142, 142, 0.8);
+    opacity: 0;
+    transform: scale(0);
+    z-index: 10;
+    text-align: center;
+    text-shadow: 0 0 20px 10px rgb(142 142 142 / 80%);
+}
+
+.name-line {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
